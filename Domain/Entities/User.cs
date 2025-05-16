@@ -13,4 +13,5 @@ public class User : AuditableEntity
     public DateTime DateOfBirth { get; set; }
     public UserRole Role { get; set; } = UserRole.RegisteredUser;
     public ICollection<RefreshToken> RefreshTokens { get; set; } = [];
+    public ICollection<Review> Reviews { get; set; } = [];
 }
